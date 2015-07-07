@@ -1,0 +1,14 @@
+/*
+  DO NOT MODIFY - This file has been generated and will be regenerated
+  Semantic UI v2.0.0
+*/
+/*-------------------
+   Step Variables
+--------------------*/
+
+@background: transparent;
+@borderRadius: 500em;
+@boxShadow: none;
+
+@activeBackground: #E5E5E5;
+@iconDistance: 0.8em;

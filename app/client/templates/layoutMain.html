@@ -1,0 +1,17 @@
+<template name="layoutMain">
+
+  {{> yield "top"}}
+
+  <div class="pusher">
+    <!-- Masthead -->
+    {{> yield "masthead"}}
+
+    <!-- Main content -->
+    <div id="main">
+      {{> yield "main"}}
+    </div>
+
+    <!-- Footer -->
+    {{> yield "footer"}}
+  </div>
+</template>

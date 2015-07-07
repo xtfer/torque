@@ -1,0 +1,13 @@
+<template name="mainMenu">
+
+  {{#if currentUser}}
+    <a class="active item" href="/">Home</a>
+    <a class="item" href="/quotes">Quotes</a>
+    <a class="item" href="/items">Items</a>
+    <a class="item" href="/accounts">Accounts</a>
+  {{else}}
+    <a class="item" href="/features">Features</a>
+    <a class="item" href="/pricing">Pricing</a>
+  {{/if}}
+
+</template>
