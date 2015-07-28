@@ -1,0 +1,49 @@
+<template name="register">
+
+  <div class="ui center aligned grid" id="register-page">
+    <div class="column middle aligned ">
+      <h2 class="ui header">
+        <div class="content">
+          Register for a new account
+        </div>
+      </h2>
+      <form class="ui large form" id="register-form">
+        <div class="ui stacked segment">
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="user icon"></i>
+              <input type="text" name="email" placeholder="E-mail address">
+            </div>
+          </div>
+          <div class="field">
+            <div class="ui left icon input">
+              <i class="lock icon"></i>
+              <input type="password" name="password" placeholder="Password">
+            </div>
+          </div>
+          <div class="inline field">
+            <div class="ui checkbox">
+              <input type="checkbox" name="terms">
+              <label>I agree to the terms and conditions</label>
+            </div>
+          </div>
+          <input class="ui fluid large submit button green" type="submit" value="Register">
+        </div>
+
+        <div class="ui error message"></div>
+        {{#if formErrors}}
+        <div class="ui negative message">
+          <ul class="list">
+            <li>{{formErrors}}</li>
+          </ul>
+        </div>
+        {{/if}}
+
+      </form>
+
+      <div class="ui message">
+        Already have an account? <a href="/login">Log in here</a>
+      </div>
+    </div>
+  </div>
+</template>

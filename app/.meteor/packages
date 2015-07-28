@@ -5,9 +5,23 @@
 # but you can also edit it by hand.
 
 meteor-platform
-iron:router
+accounts-base
 accounts-password
 semantic:ui
 flemay:less-autoprefixer
-useraccounts:semantic-ui
 jquery
+sewdn:collection-behaviours
+meteorhacks:flow-router
+meteorhacks:flow-layout
+meteorhacks:fast-render
+meteorhacks:kadira
+meteorhacks:kadira-debug
+meteorhacks:kadira-profiler
+meteorhacks:zones
+torque:torque-core
+torque:torque-profile
+torque:torque-layout
+example:example
+example:example-model
+example:example-dash
+example:example-home

@@ -1,0 +1,11 @@
+<template name="userMenu">
+
+  {{#if currentUser}}
+    <a class="ui inverted button" href="/profile">Profile</a>
+    <a class="ui inverted button logout" href="/logout">Log out</a>
+  {{else}}
+    <a class="ui inverted button" href="/login">Log in</a>
+    <a class="ui inverted button" href="/register">Sign Up</a>
+  {{/if}}
+
+</template>
