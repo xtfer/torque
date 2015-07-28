@@ -1,0 +1,39 @@
+<template name="responsiveMenus">
+  <!-- Following Menu -->
+  <div class="ui large top fixed hidden menu">
+    <div class="ui container">
+      {{> mainMenu}}
+
+      <div class="right menu">
+
+        {{#if currentUser}}
+          <div class="item">
+            <a class="ui button" href="/profile">Profile</a>
+          </div>
+          <div class="item">
+            <a class="ui primary button logout" href="#">Log out</a>
+          </div>
+        {{else}}
+          <div class="item">
+            <a class="ui button" href="/login">Log in</a>
+          </div>
+          <div class="item">
+            <a class="ui primary button" href="/register">Sign Up</a>
+          </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu">
+    {{> mainMenu}}
+    {{#if currentUser}}
+      <a class="item" href="/profile">Profile</a>
+      <a class="item logout" href="/logout">Log out</a>
+    {{else}}
+      <a class="item" href="/login">Log in</a>
+      <a class="item" href="/register">Sign Up</a>
+    {{/if}}
+  </div>
+</template>

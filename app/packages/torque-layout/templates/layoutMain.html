@@ -1,0 +1,18 @@
+<template name="layoutMain">
+
+  {{> Template.dynamic template=top}}
+
+  <div class="pusher">
+    <!-- Masthead -->
+    {{> Template.dynamic template=masthead}}
+
+    <!-- Main content -->
+    <div id="main">
+      {{> Template.dynamic template=title}}
+      {{> Template.dynamic template=main}}
+    </div>
+
+    <!-- Footer -->
+    {{> Template.dynamic template=footer}}
+  </div>
+</template>

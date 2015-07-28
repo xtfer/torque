@@ -1,0 +1,6 @@
+/**
+ * @file
+ * Torque declaration
+ */
+
+Torque = {};
